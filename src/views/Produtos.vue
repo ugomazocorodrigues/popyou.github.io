@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>PRODUTOS</h1>
+    <v-row>
+      <span class="text-h4 verde--text ml-8 my-2">PRODUTOS</span>
+    </v-row>
   </div>
 </template>
 

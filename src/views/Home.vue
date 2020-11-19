@@ -16,19 +16,31 @@
     <v-container>
       <v-row class="mt-12" justify="space-between" no-gutters>
         <v-card flat tile max-width="269">
-          <v-img src="@/assets/mugSabrina.png" height="293"></v-img>
+          <v-img
+            src="@/assets/mugSabrina.png"
+            height="293"
+            @click="clickBusca('caneca')"
+          ></v-img>
           <v-row justify="center">
             <v-card-title> CANECAS </v-card-title>
           </v-row>
         </v-card>
         <v-card flat tile max-width="269">
-          <v-img src="@/assets/ghostbustersCamiseta.png" height="293"></v-img>
+          <v-img
+            src="@/assets/ghostbustersCamiseta.png"
+            height="293"
+            @click="clickBusca('camiseta')"
+          ></v-img>
           <v-row justify="center">
             <v-card-title> CAMISETAS </v-card-title>
           </v-row>
         </v-card>
         <v-card flat tile max-width="269">
-          <v-img src="@/assets/notebookTheGoodPlace.png" height="293"></v-img>
+          <v-img
+            src="@/assets/notebookTheGoodPlace.png"
+            height="293"
+            @click="clickBusca('caderno')"
+          ></v-img>
           <v-row justify="center">
             <v-card-title> CADERNOS </v-card-title>
           </v-row>
@@ -66,6 +78,13 @@ export default {
         },
       ],
     };
+  },
+
+  methods: {
+    clickBusca(filtro) {
+      this.$store.state.search = filtro;
+      this.$router.push("/busca");
+    },
   },
 };
 </script>

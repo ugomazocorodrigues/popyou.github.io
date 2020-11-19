@@ -13,7 +13,7 @@
         />
       </div>
 
-      <v-btn text class="ml-8 black--text" @click="$router.push('/produtos')"
+      <v-btn text class="ml-8 black--text" @click="clickProdutos()"
         >produtos</v-btn
       >
       <v-btn text class="ml-3 black--text" @click="$router.push('/contato')"
@@ -43,11 +43,18 @@
           </v-btn>
         </template>
       </v-text-field>
-
-      <v-btn icon class="ml-4">
-        <v-icon class="black--text" large>mdi-cart-outline</v-icon>
-      </v-btn>
-      <v-btn icon>
+      <v-badge
+        :content="$store.state.carrinho.itens.length"
+        :value="$store.state.carrinho.itens.length"
+        color="black"
+        overlap
+        bottom
+      >
+        <v-btn icon @click="$router.push('/carrinho')" class="ml-4">
+          <v-icon class="black--text" large>mdi-cart-outline</v-icon>
+        </v-btn>
+      </v-badge>
+      <v-btn icon @click="$router.push('/perfil')">
         <i src="./assets/perfil.svg"></i>
         <v-icon class="black--text" large>mdi-account-outline</v-icon>
       </v-btn>
@@ -93,7 +100,7 @@
             </v-row>
           </v-col>
           <v-col cols="6" class="pl-12">
-            <v-row justify="center" class="mt-8">
+            <v-row class="mt-8">
               <span class="text-h4 white--text">INSTITUCIONAL</span>
             </v-row>
             <v-row justify="end">
@@ -193,5 +200,19 @@ export default {
       ],
     };
   },
+
+  methods: {
+    clickProdutos() {
+      this.$store.state.search = "";
+      this.$router.push("/busca");
+    },
+  },
 };
 </script>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+.v-application {
+  font-family: Montserrat, sans-serif !important;
+}
+</style>
