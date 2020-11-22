@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
 import Busca from '@/views/Busca.vue'
 import SobreNos from '@/views/SobreNos.vue'
-import Produtos from '@/views/Produtos.vue'
+import Produto from '@/views/Produto.vue'
 import Contato from '@/views/Contato.vue'
 import Perfil from '@/views/Perfil.vue'
 import Carrinho from '@/views/Carrinho.vue'
@@ -27,9 +27,9 @@ const routes = [
     component: SobreNos
   },
   {
-    path: '/produtos',
-    name: 'Produtos',
-    component: Produtos
+    path: '/produto/:id',
+    name: 'Produto',
+    component: Produto
   },
   {
     path: '/contato',

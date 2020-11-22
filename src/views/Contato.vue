@@ -1,20 +1,22 @@
 <template>
   <div>
+    <v-breadcrumbs :items="breadcrumbs" divider=">" large />
     <v-snackbar
       v-model="snackbar.show"
       :timeout="snackbar.timeout"
       :color="snackbar.color"
       top
+      tile
       text
+      elevation="0"
     >
       {{ snackbar.text }}
     </v-snackbar>
-
-    <v-row>
-      <span class="text-h4 verde--text ml-8 my-2">CONTATO</span>
+    <v-row class="ml-8">
+      <span class="text-h4 verde--text">CONTATO</span>
     </v-row>
-    <v-row class="ml-5">
-      <v-col cols="4">
+    <v-row>
+      <v-col cols="4" class="ml-12">
         <v-row
           align="center"
           class="mt-4"
@@ -47,18 +49,18 @@
           <v-row no-gutters>
             <v-col>
               <v-text-field
-                v-model="contato.titulo"
+                v-model.trim="contato.titulo"
                 label="título"
                 outlined
                 dense
-                :rules="rules.rules1"
+                :rules="rules.obrigatorio"
               ></v-text-field>
             </v-col>
           </v-row>
           <v-row no-gutters>
             <v-col>
               <v-text-field
-                v-model="contato.email"
+                v-model.trim="contato.email"
                 label="e-mail"
                 outlined
                 dense
@@ -68,7 +70,7 @@
           <v-row no-gutters>
             <v-col>
               <v-text-field
-                v-model="contato.telefone"
+                v-model.trim="contato.telefone"
                 label="telefone"
                 outlined
                 dense
@@ -78,7 +80,7 @@
           <v-row no-gutters>
             <v-col>
               <v-textarea
-                v-model="contato.mensagem"
+                v-model.trim="contato.mensagem"
                 label="mensagem"
                 auto-grow
                 maxlength="500"
@@ -86,7 +88,7 @@
                 counter
                 dense
                 outlined
-                :rules="rules.rules2"
+                :rules="rules.obrigatorio"
               ></v-textarea>
             </v-col>
           </v-row>
@@ -103,19 +105,33 @@
 
 <script>
 export default {
+  name: "Contato",
+
   data() {
     return {
-      contato: {
-        titulo: "",
-        email: "",
-        telefone: "",
-        mensagem: "",
-      },
+      breadcrumbs: [
+        {
+          text: "HOME",
+          disabled: false,
+          href: "/",
+        },
+        {
+          text: "CONTATO",
+          disabled: true,
+          href: "/contato",
+        },
+      ],
       snackbar: {
         text: "",
         color: "",
         timeout: 3000,
         show: false,
+      },
+      contato: {
+        titulo: "",
+        email: "",
+        telefone: "",
+        mensagem: "",
       },
       redesSociais: [
         {
@@ -141,13 +157,13 @@ export default {
         },
       ],
       rules: {
-        rules1: [(value) => value.length > 0 || "campo obrigatório"],
-        rules2: [(value) => value.length > 0 || "campo obrigatório"],
+        obrigatorio: [(value) => value.length > 0 || "campo obrigatório"],
       },
     };
   },
 
   methods: {
+    // Fora de escopo
     clickEnviar() {
       if (this.$refs.form.validate()) {
         this.contato.titulo = "";

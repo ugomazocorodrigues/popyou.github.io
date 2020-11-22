@@ -14,6 +14,12 @@ export default new Vuex.Store({
         img: require("@/assets/mugSabrina.png"),
         preco: 15.0,
         vendas: 1,
+        propriedades: {
+          seuNome: false,
+          tamanho: false,
+          carregarImagem: false,
+          cor: false
+        },
       },
       {
         id: 2,
@@ -22,6 +28,12 @@ export default new Vuex.Store({
         img: require("@/assets/ghostbustersCamiseta.png"),
         preco: 40.0,
         vendas: 2,
+        propriedades: {
+          seuNome: false,
+          tamanho: true,
+          carregarImagem: false,
+          cor: true
+        },
       },
       {
         id: 3,
@@ -30,6 +42,12 @@ export default new Vuex.Store({
         img: require("@/assets/notebookTheGoodPlace.png"),
         preco: 15.0,
         vendas: 2,
+        propriedades: {
+          seuNome: false,
+          tamanho: false,
+          carregarImagem: false,
+          cor: false
+        },
       },
       {
         id: 4,
@@ -38,6 +56,12 @@ export default new Vuex.Store({
         img: require("@/assets/mugGhostbusters.png"),
         preco: 10.0,
         vendas: 4,
+        propriedades: {
+          seuNome: false,
+          tamanho: false,
+          carregarImagem: false,
+          cor: false
+        },
       },
       {
         id: 5,
@@ -46,6 +70,12 @@ export default new Vuex.Store({
         img: require("@/assets/camisetaScooby.png"),
         preco: 40.0,
         vendas: 4,
+        propriedades: {
+          seuNome: false,
+          tamanho: true,
+          carregarImagem: false,
+          cor: false
+        },
       },
       {
         id: 6,
@@ -54,6 +84,12 @@ export default new Vuex.Store({
         img: require("@/assets/cadernoChristmas.png"),
         preco: 20.0,
         vendas: 4,
+        propriedades: {
+          seuNome: false,
+          tamanho: false,
+          carregarImagem: false,
+          cor: false
+        },
       },
       {
         id: 7,
@@ -62,6 +98,12 @@ export default new Vuex.Store({
         img: require("@/assets/cadernoStarWars.png"),
         preco: 25.0,
         vendas: 5,
+        propriedades: {
+          seuNome: true,
+          tamanho: false,
+          carregarImagem: false,
+          cor: false
+        },
       },
       {
         id: 8,
@@ -70,6 +112,12 @@ export default new Vuex.Store({
         img: require("@/assets/caseCustomizavel.png"),
         preco: 30.0,
         vendas: 1,
+        propriedades: {
+          seuNome: false,
+          tamanho: false,
+          carregarImagem: true,
+          cor: false
+        },
       },
       {
         id: 9,
@@ -78,6 +126,12 @@ export default new Vuex.Store({
         img: require("@/assets/mugCustomizável.png"),
         preco: 10.0,
         vendas: 1,
+        propriedades: {
+          seuNome: false,
+          tamanho: false,
+          carregarImagem: true,
+          cor: false
+        },
       },
       {
         id: 10,
@@ -86,6 +140,12 @@ export default new Vuex.Store({
         img: require("@/assets/notebookStevenUniverseCustomizavel.png"),
         preco: 25.0,
         vendas: 3,
+        propriedades: {
+          seuNome: true,
+          tamanho: false,
+          carregarImagem: false,
+          cor: false
+        },
       },
       {
         id: 11,
@@ -94,6 +154,12 @@ export default new Vuex.Store({
         img: require("@/assets/camisetaCustomizavel.png"),
         preco: 40.0,
         vendas: 1,
+        propriedades: {
+          seuNome: false,
+          tamanho: true,
+          carregarImagem: true,
+          cor: true
+        },
       },
       {
         id: 12,
@@ -102,6 +168,12 @@ export default new Vuex.Store({
         img: require("@/assets/cadernoMalevola.png"),
         preco: 20.0,
         vendas: 1,
+        propriedades: {
+          seuNome: false,
+          tamanho: false,
+          carregarImagem: false,
+          cor: false
+        },
       },
       {
         id: 13,
@@ -110,6 +182,12 @@ export default new Vuex.Store({
         img: require("@/assets/mugJulie.png"),
         preco: 10.0,
         vendas: 3,
+        propriedades: {
+          seuNome: false,
+          tamanho: false,
+          carregarImagem: false,
+          cor: false
+        },
       },
       {
         id: 14,
@@ -118,6 +196,12 @@ export default new Vuex.Store({
         img: require("@/assets/mugChristmasCustomizavel.png"),
         preco: 15.0,
         vendas: 2,
+        propriedades: {
+          seuNome: true,
+          tamanho: false,
+          carregarImagem: false,
+          cor: false
+        },
       },
       {
         id: 15,
@@ -126,6 +210,12 @@ export default new Vuex.Store({
         img: require("@/assets/mugSunsetCurve.png"),
         preco: 10.0,
         vendas: 3,
+        propriedades: {
+          seuNome: false,
+          tamanho: false,
+          carregarImagem: false,
+          cor: false
+        },
       },
       {
         id: 16,
@@ -134,6 +224,12 @@ export default new Vuex.Store({
         img: require("@/assets/camisetaConan.png"),
         preco: 10.0,
         vendas: 5,
+        propriedades: {
+          seuNome: false,
+          tamanho: true,
+          carregarImagem: false,
+          cor: true
+        },
       },
       {
         id: 17,
@@ -142,6 +238,12 @@ export default new Vuex.Store({
         img: require("@/assets/camisetaPhamtons.png"),
         preco: 10.0,
         vendas: 5,
+        propriedades: {
+          seuNome: false,
+          tamanho: true,
+          carregarImagem: false,
+          cor: false
+        },
       },
     ],
     carrinho: {

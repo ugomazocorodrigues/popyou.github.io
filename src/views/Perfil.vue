@@ -1,10 +1,11 @@
 <template>
   <div>
-    <v-row>
-      <span class="text-h4 verde--text ml-8 my-2">MINHA CONTA</span>
+    <v-breadcrumbs :items="breadcrumbs" divider=">" large />
+    <v-row class="ml-8">
+      <span class="text-h4 verde--text">MINHA CONTA</span>
     </v-row>
     <v-row class="ml-5">
-      <v-col cols="4">
+      <v-col cols="4" class="ml-4">
         <v-row class="my-2">
           <span class="text-h5">DADOS PESSOAIS</span>
         </v-row>
@@ -47,8 +48,22 @@
 
 <script>
 export default {
+  name: "Perfil",
+
   data() {
     return {
+      breadcrumbs: [
+        {
+          text: "HOME",
+          disabled: false,
+          href: "/",
+        },
+        {
+          text: "PERFIL",
+          disabled: true,
+          href: "/perfil",
+        },
+      ],
       usuario: {
         nome: "Lara",
         email: "larazinha@gmail.com",

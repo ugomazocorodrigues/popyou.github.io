@@ -163,21 +163,8 @@
 export default {
   name: "App",
 
-  components: {},
-
   data() {
     return {
-      carrossel: [
-        {
-          src: "./assets/banner1.png",
-        },
-        {
-          src: "./assets/bannerHalloween.png",
-        },
-        {
-          src: "./assets/bannerPopCaixinhas.png",
-        },
-      ],
       redesSociais: [
         {
           img: require("@/assets/facebook.png"),

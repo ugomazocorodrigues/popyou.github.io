@@ -1,7 +1,8 @@
 <template>
   <div>
-    <v-row>
-      <span class="text-h4 verde--text ml-8 my-2">SOBRE NÓS</span>
+    <v-breadcrumbs :items="breadcrumbs" divider=">" large />
+    <v-row class="ml-8">
+      <span class="text-h4 verde--text">SOBRE NÓS</span>
     </v-row>
     <v-row justify="center">
       <v-col cols="10">
@@ -22,8 +23,8 @@
         </p>
       </v-col>
     </v-row>
-    <v-row>
-      <span class="text-h5 verde--text ml-8">SUSTENTABILIDADE</span>
+    <v-row class="ml-8">
+      <span class="text-h5 verde--text">SUSTENTABILIDADE</span>
     </v-row>
     <v-row justify="center">
       <v-col cols="10">
@@ -39,7 +40,26 @@
 
 
 <script>
-export default {};
+export default {
+  name: "SobreNos",
+
+  data() {
+    return {
+      breadcrumbs: [
+        {
+          text: "HOME",
+          disabled: false,
+          href: "/",
+        },
+        {
+          text: "SOBRE NÓS",
+          disabled: true,
+          href: "/sobrenos",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style>

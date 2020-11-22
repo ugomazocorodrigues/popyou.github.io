@@ -13,6 +13,7 @@
       >
       </v-carousel-item>
     </v-carousel>
+
     <v-container>
       <v-row class="mt-12" justify="space-between" no-gutters>
         <v-card flat tile max-width="269">
@@ -58,6 +59,8 @@
 
 <script>
 export default {
+  name: "",
+
   data() {
     return {
       carrossels: [
@@ -81,8 +84,8 @@ export default {
   },
 
   methods: {
-    clickBusca(filtro) {
-      this.$store.state.search = filtro;
+    clickBusca(busca) {
+      this.$store.state.search = busca;
       this.$router.push("/busca");
     },
   },

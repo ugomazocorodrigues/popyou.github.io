@@ -1,17 +1,21 @@
 <template>
   <div>
+    <v-breadcrumbs :items="breadcrumbs" divider=">" large />
+
     <v-snackbar
       v-model="snackbar.show"
       :timeout="snackbar.timeout"
       :color="snackbar.color"
       top
+      tile
       text
+      elevation="0"
     >
       {{ snackbar.text }}
     </v-snackbar>
 
     <v-row class="ma-2">
-      <v-col cols="2">
+      <v-col cols="2" class="ml-4">
         <v-card flat>
           <v-card-title class="grey lighten-4">ORDENAR</v-card-title>
           <v-card-text> </v-card-text>
@@ -61,6 +65,7 @@
               tile
               max-width="269"
               class="ma-5"
+              @click="clickProduto(produto.id)"
             >
               <v-img :src="produto.img" height="293"></v-img>
               <v-row class="ma-2" justify="center">
@@ -75,7 +80,10 @@
                 >
               </v-row>
               <v-row justify="center" class="mb-4">
-                <v-btn color="amarelo" large @click="clickComprar(produto.id)"
+                <v-btn
+                  color="amarelo"
+                  large
+                  @click.stop="clickComprar(produto.id)"
                   >comprar</v-btn
                 >
               </v-row>
@@ -89,8 +97,28 @@
 
 <script>
 export default {
+  name: "Busca",
+
   data() {
     return {
+      breadcrumbs: [
+        {
+          text: "HOME",
+          disabled: false,
+          href: "/",
+        },
+        {
+          text: "BUSCA",
+          disabled: true,
+          href: "/busca",
+        },
+      ],
+      snackbar: {
+        text: "",
+        color: "",
+        timeout: 3000,
+        show: false,
+      },
       ordemSelecionada: 0,
       ordens: [
         { label: "A - Z", campo: "nome", sentido: 1 },
@@ -99,22 +127,18 @@ export default {
         { label: "maior preço", campo: "preco", sentido: -1 },
         { label: "mais vendidos", campo: "vendas", sentido: -1 },
       ],
-      snackbar: {
-        text: "",
-        color: "",
-        timeout: 3000,
-        show: false,
-      },
     };
   },
 
   computed: {
+    // Fora de escopo
     search() {
       return this.$store.state.search
         ? this.$store.state.search.toLowerCase()
         : "";
     },
 
+    // Fora de escopo
     produtosSearch() {
       const campo = this.ordens[this.ordemSelecionada].campo;
       const sentido = this.ordens[this.ordemSelecionada].sentido;
@@ -132,14 +156,17 @@ export default {
   },
 
   methods: {
+    // Fora de escopo
     clickOrdenar(i) {
       this.ordemSelecionada = i;
     },
 
+    // Fora de escopo
     clickFiltrar(grupo) {
       this.$store.state.search = grupo;
     },
 
+    // Fora de escopo
     clickComprar(id) {
       const item = {
         id,
@@ -154,6 +181,10 @@ export default {
       this.snackbar.text = `${produto.nome} adicionado ao carrinho!`;
       this.snackbar.color = "verde";
       this.snackbar.show = true;
+    },
+
+    clickProduto(id) {
+      this.$router.push(`/produto/${id}`);
     },
   },
 };

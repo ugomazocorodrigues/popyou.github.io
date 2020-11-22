@@ -1,11 +1,15 @@
   <template>
   <div>
+    <v-breadcrumbs :items="breadcrumbs" divider=">" large />
+
     <v-snackbar
       v-model="snackbar.show"
       :timeout="snackbar.timeout"
       :color="snackbar.color"
       top
+      tile
       text
+      elevation="0"
     >
       {{ snackbar.text }}
     </v-snackbar>
@@ -20,7 +24,13 @@
         </v-row>
         <v-divider class="mr-12"></v-divider>
         <v-row>
-          <span class="text-h6 ml-8 my-2">PRODUTO</span>
+          <v-col cols="7">
+            <span class="text-h6 ml-8 my-2">PRODUTO</span>
+          </v-col>
+
+          <v-col cols="3" align="end">
+            <span class="text-h6 ml-8 my-2">SUBTOTAL</span>
+          </v-col>
         </v-row>
         <v-divider class="mr-12"></v-divider>
         <div v-for="(item, i) in itens" :key="i" class="mt-2">
@@ -31,12 +41,16 @@
             <v-col cols="6">
               <span>#{{ item.id }} {{ item.nome }} </span>
             </v-col>
-            <v-col cols="3">
-              <span>R$ {{ item.preco * item.quantidade }} </span>
+            <v-col cols="3" align="end">
+              <span>
+                {{ formataValor(item.preco * item.quantidade) }}
+              </span>
             </v-col>
           </v-row>
           <v-row>
-            <v-col cols="2" align="center"> R$ {{ item.preco }} </v-col>
+            <v-col cols="2" align="center">
+              {{ formataValor(item.preco) }}
+            </v-col>
             <v-col cols="6">
               <v-btn
                 :disabled="$store.state.carrinho.itens[i].quantidade <= 1"
@@ -66,8 +80,8 @@
           <v-col cols="8">
             <span>SUBTOTAL (sem frete):</span>
           </v-col>
-          <v-col cols="3">
-            <span>R$ {{ carrinhoSubtotal }} </span>
+          <v-col cols="3" align="end">
+            <span>{{ formataValor(carrinhoSubtotal) }} </span>
           </v-col>
         </v-row>
         <v-divider class="mr-12"></v-divider>
@@ -98,8 +112,8 @@
           <v-col cols="8">
             <span>TOTAL:</span>
           </v-col>
-          <v-col cols="3">
-            <span>R$ {{ carrinhoTotal }}</span>
+          <v-col cols="3" align="end">
+            <span>{{ formataValor(carrinhoTotal) }}</span>
           </v-col>
         </v-row>
         <v-row>
@@ -120,8 +134,22 @@
   
   <script>
 export default {
+  name: "Carrinho",
+
   data() {
     return {
+      breadcrumbs: [
+        {
+          text: "HOME",
+          disabled: false,
+          href: "/",
+        },
+        {
+          text: "CARRINHO",
+          disabled: true,
+          href: "/carrinho",
+        },
+      ],
       valorFrete: 0,
       snackbar: {
         text: "",
@@ -164,22 +192,32 @@ export default {
   },
 
   methods: {
+    // Fora de escopo
+    formataValor(valor, simbolo = "R$") {
+      return `${simbolo} ${valor.toFixed(2).replace(".", ",")}`;
+    },
+
+    // Fora de escopo
     clickQuantidadeItemMenos(i) {
       this.$store.state.carrinho.itens[i].quantidade--;
     },
 
+    // Fora de escopo
     clickQuantidadeItemMais(i) {
       this.$store.state.carrinho.itens[i].quantidade++;
     },
 
+    // Fora de escopo
     clickDeletarItem(i) {
       this.$store.state.carrinho.itens.splice(i, 1);
     },
 
+    // Fora de escopo
     clickCalcularFrete() {
       this.valorFrete = 10;
     },
 
+    // Fora de escopo
     clickFinalizarCompra() {
       this.$store.state.carrinho.itens = [];
       this.snackbar.text = "Compra realizada com sucesso";
