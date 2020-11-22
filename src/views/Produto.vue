@@ -19,11 +19,13 @@
         </v-row>
         <v-row class="my-6">
           <ul>
-            <li>Pode ser levado ao microondas</li>
-            <li>Cerâmica</li>
+            <li v-for="(caracteristica, i) in produto.caracteristicas" :key="i">
+              {{ caracteristica }}
+            </li>
+            <!-- <li>Cerâmica</li>
             <li>Impressão em alta definição</li>
             <li>Não sai ao lavar</li>
-            <li>Capacidade: 325 ml</li>
+            <li>Capacidade: 325 ml</li> -->
           </ul>
         </v-row>
       </v-col>

@@ -20,6 +20,13 @@ export default new Vuex.Store({
           carregarImagem: false,
           cor: false
         },
+        caracteristicas: [
+          "Pode ser levado ao microondas",
+          "Cerâmica",
+          "Impressão em alta definição",
+          "Não sai ao lavar",
+          "Capacidade: 325 ml"
+        ]
       },
       {
         id: 2,
@@ -34,6 +41,12 @@ export default new Vuex.Store({
           carregarImagem: false,
           cor: true
         },
+        caracteristicas: [
+          "Camiseta Ghostbusters",
+          "100% algodão",
+          "Fabricação 100% brasileira",
+          "Manga curta"
+        ]
       },
       {
         id: 3,
@@ -48,6 +61,13 @@ export default new Vuex.Store({
           carregarImagem: false,
           cor: false
         },
+        caracteristicas: [
+          "Pode ser levado ao microondas",
+          "Cerâmica",
+          "Impressão em alta definição",
+          "Não sai ao lavar",
+          "Capacidade: 325 ml"
+        ]
       },
       {
         id: 4,
@@ -62,6 +82,13 @@ export default new Vuex.Store({
           carregarImagem: false,
           cor: false
         },
+        caracteristicas: [
+          "Pode ser levado ao microondas",
+          "Cerâmica",
+          "Impressão em alta definição",
+          "Não sai ao lavar",
+          "Capacidade: 325 ml"
+        ]
       },
       {
         id: 5,
@@ -76,6 +103,13 @@ export default new Vuex.Store({
           carregarImagem: false,
           cor: false
         },
+        caracteristicas: [
+          "Pode ser levado ao microondas",
+          "Cerâmica",
+          "Impressão em alta definição",
+          "Não sai ao lavar",
+          "Capacidade: 325 ml"
+        ]
       },
       {
         id: 6,
@@ -90,6 +124,13 @@ export default new Vuex.Store({
           carregarImagem: false,
           cor: false
         },
+        caracteristicas: [
+          "Pode ser levado ao microondas",
+          "Cerâmica",
+          "Impressão em alta definição",
+          "Não sai ao lavar",
+          "Capacidade: 325 ml"
+        ]
       },
       {
         id: 7,
@@ -104,6 +145,12 @@ export default new Vuex.Store({
           carregarImagem: false,
           cor: false
         },
+        caracteristicas: [
+          "Mari perfeita",
+          "Carol perfeita",
+          "ugo um bosta",
+          "o de cima ta mentindo",
+        ]
       },
       {
         id: 8,
@@ -118,6 +165,13 @@ export default new Vuex.Store({
           carregarImagem: true,
           cor: false
         },
+        caracteristicas: [
+          "Pode ser levado ao microondas",
+          "Cerâmica",
+          "Impressão em alta definição",
+          "Não sai ao lavar",
+          "Capacidade: 325 ml"
+        ]
       },
       {
         id: 9,
@@ -132,6 +186,13 @@ export default new Vuex.Store({
           carregarImagem: true,
           cor: false
         },
+        caracteristicas: [
+          "Pode ser levado ao microondas",
+          "Cerâmica",
+          "Impressão em alta definição",
+          "Não sai ao lavar",
+          "Capacidade: 325 ml"
+        ]
       },
       {
         id: 10,
@@ -146,6 +207,13 @@ export default new Vuex.Store({
           carregarImagem: false,
           cor: false
         },
+        caracteristicas: [
+          "Pode ser levado ao microondas",
+          "Cerâmica",
+          "Impressão em alta definição",
+          "Não sai ao lavar",
+          "Capacidade: 325 ml"
+        ]
       },
       {
         id: 11,
@@ -160,6 +228,13 @@ export default new Vuex.Store({
           carregarImagem: true,
           cor: true
         },
+        caracteristicas: [
+          "Pode ser levado ao microondas",
+          "Cerâmica",
+          "Impressão em alta definição",
+          "Não sai ao lavar",
+          "Capacidade: 325 ml"
+        ]
       },
       {
         id: 12,
@@ -174,6 +249,13 @@ export default new Vuex.Store({
           carregarImagem: false,
           cor: false
         },
+        caracteristicas: [
+          "Pode ser levado ao microondas",
+          "Cerâmica",
+          "Impressão em alta definição",
+          "Não sai ao lavar",
+          "Capacidade: 325 ml"
+        ]
       },
       {
         id: 13,
@@ -188,6 +270,13 @@ export default new Vuex.Store({
           carregarImagem: false,
           cor: false
         },
+        caracteristicas: [
+          "Pode ser levado ao microondas",
+          "Cerâmica",
+          "Impressão em alta definição",
+          "Não sai ao lavar",
+          "Capacidade: 325 ml"
+        ]
       },
       {
         id: 14,
@@ -202,6 +291,13 @@ export default new Vuex.Store({
           carregarImagem: false,
           cor: false
         },
+        caracteristicas: [
+          "Pode ser levado ao microondas",
+          "Cerâmica",
+          "Impressão em alta definição",
+          "Não sai ao lavar",
+          "Capacidade: 325 ml"
+        ]
       },
       {
         id: 15,
@@ -216,6 +312,13 @@ export default new Vuex.Store({
           carregarImagem: false,
           cor: false
         },
+        caracteristicas: [
+          "Pode ser levado ao microondas",
+          "Cerâmica",
+          "Impressão em alta definição",
+          "Não sai ao lavar",
+          "Capacidade: 325 ml"
+        ]
       },
       {
         id: 16,
@@ -230,6 +333,13 @@ export default new Vuex.Store({
           carregarImagem: false,
           cor: true
         },
+        caracteristicas: [
+          "Pode ser levado ao microondas",
+          "Cerâmica",
+          "Impressão em alta definição",
+          "Não sai ao lavar",
+          "Capacidade: 325 ml"
+        ]
       },
       {
         id: 17,
@@ -244,6 +354,13 @@ export default new Vuex.Store({
           carregarImagem: false,
           cor: false
         },
+        caracteristicas: [
+          "Pode ser levado ao microondas",
+          "Cerâmica",
+          "Impressão em alta definição",
+          "Não sai ao lavar",
+          "Capacidade: 325 ml"
+        ]
       },
     ],
     carrinho: {
