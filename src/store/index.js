@@ -62,11 +62,11 @@ export default new Vuex.Store({
           cor: false
         },
         caracteristicas: [
-          "Pode ser levado ao microondas",
-          "Cerâmica",
-          "Impressão em alta definição",
-          "Não sai ao lavar",
-          "Capacidade: 325 ml"
+          "Caderno de Star Wars",
+          "Capa dura",
+          "Com espiral",
+          "96 folhas sem pauta",
+          "Formato A5 (148mm x 210mm)"
         ]
       },
       {
