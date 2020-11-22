@@ -15,7 +15,7 @@
     <v-row>
       <v-col class="ml-12">
         <v-row>
-          <img :src="produto.img" alt="" height="780" />
+          <img :src="produto.img" alt="" height="293" />
         </v-row>
         <v-row class="my-6">
           <ul>
