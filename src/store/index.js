@@ -146,10 +146,11 @@ export default new Vuex.Store({
           cor: false
         },
         caracteristicas: [
-          "Mari perfeita",
-          "Carol perfeita",
-          "ugo um bosta",
-          "o de cima ta mentindo",
+          "Pode ser levado ao microondas",
+          "Cerâmica",
+          "Impressão em alta definição",
+          "Não sai ao lavar",
+          "Capacidade: 325 ml"
         ]
       },
       {
