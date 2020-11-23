@@ -9,7 +9,7 @@
         <p>
           O projeto foi totalmente criado e pensado por estudantes de Design
           para colocar o consumidor como centro da experiência da cultura pop e
-          geek. OI lalala 
+          geek.
         </p>
         <p>
           Baseado no desejo dos criadores, a loja foi criada dando a
