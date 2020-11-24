@@ -120,14 +120,16 @@
           <span>{{ formataValor(carrinhoTotal) }}</span>
         </v-col>
       </v-row>
-      <v-row class="ml-4 mt-4">
-        <v-btn
-          elevation="none"
-          class="amarelo"
-          block
-          @click="clickFinalizarCompra()"
-          >finalizar compra</v-btn
-        >
+      <v-row class="ml-4">
+        <v-col cols="4" />
+        <v-col cols="4" class="ml-3">
+          <v-btn
+            elevation="none"
+            class="amarelo"
+            @click="clickFinalizarCompra()"
+            >finalizar compra</v-btn
+          >
+        </v-col>
       </v-row>
 
       <v-card-actions> </v-card-actions>
