@@ -14,19 +14,19 @@
 
     <v-card flat>
       <v-card-title>
-        <v-span class="text-h4 verde--text my-2">CARRINHO</v-span>
+        <span class="text-h4 verde--text my-2">CARRINHO</span>
         <v-spacer></v-spacer>
-        <v-btn icon class="black--text">
-        <v-icon>mdi-close</v-icon>
-      </v-btn>
+        <v-btn @click="$emit('input', false)" icon class="black--text">
+          <v-icon>mdi-close</v-icon>
+        </v-btn>
       </v-card-title>
-      
+
       <v-divider class="mx-4"></v-divider>
-      <v-row>
-        <v-col>
+      <v-row no-gutters>
+        <v-col cols="8">
           <v-card-title>PRODUTO</v-card-title>
         </v-col>
-        <v-col>
+        <v-col cols="4">
           <v-card-title>SUBTOTAL</v-card-title>
         </v-col>
       </v-row>
@@ -132,17 +132,17 @@
       <v-card-actions> </v-card-actions>
     </v-card>
     <!-- /////////////////// -->
-    
-    
   </div>
 </template>
   
   <script>
 export default {
   name: "Carrinho",
+  props: { value: Boolean },
 
   data() {
     return {
+      mostrarCarrinho: false,
       valorFrete: 0,
       snackbar: {
         text: "",

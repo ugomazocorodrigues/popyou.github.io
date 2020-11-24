@@ -22,10 +22,6 @@
             <li v-for="(caracteristica, i) in produto.caracteristicas" :key="i">
               {{ caracteristica }}
             </li>
-            <!-- <li>Cerâmica</li>
-            <li>Impressão em alta definição</li>
-            <li>Não sai ao lavar</li>
-            <li>Capacidade: 325 ml</li> -->
           </ul>
         </v-row>
       </v-col>
@@ -36,7 +32,7 @@
         <v-row>
           <span class="text-h5 my-6">{{ formataValor(produto.preco) }}</span>
         </v-row>
-        <v-row>
+        <v-row justify="start">
           <v-col cols="8">
             <v-text-field
               v-show="produto.propriedades.seuNome"

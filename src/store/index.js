@@ -39,7 +39,7 @@ export default new Vuex.Store({
           seuNome: false,
           tamanho: true,
           carregarImagem: false,
-          cor: true
+          cor: false
         },
         caracteristicas: [
           "100% algodão",
@@ -99,7 +99,7 @@ export default new Vuex.Store({
           seuNome: false,
           tamanho: true,
           carregarImagem: false,
-          cor: false
+          cor: true
         },
         caracteristicas: [
           "100% algodão",
@@ -322,7 +322,7 @@ export default new Vuex.Store({
           seuNome: false,
           tamanho: true,
           carregarImagem: false,
-          cor: true
+          cor: false
         },
         caracteristicas: [
           "100% algodão",
