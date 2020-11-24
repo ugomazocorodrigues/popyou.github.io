@@ -60,7 +60,7 @@
       </v-btn>
     </v-app-bar>
     <v-navigation-drawer v-model="mostrarCarrinho" app width="500" right>
-      <Carrinho />
+      <Carrinho v-model="mostrarCarrinho" />
     </v-navigation-drawer>
 
     <v-main>
