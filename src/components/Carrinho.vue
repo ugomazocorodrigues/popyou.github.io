@@ -13,8 +13,14 @@
     </v-snackbar>
 
     <v-card flat>
-      <v-card-title class="text-h4 verde--text my-2">CARRINHO</v-card-title>
-
+      <v-card-title>
+        <v-span class="text-h4 verde--text my-2">CARRINHO</v-span>
+        <v-spacer></v-spacer>
+        <v-btn icon class="black--text">
+        <v-icon>mdi-close</v-icon>
+      </v-btn>
+      </v-card-title>
+      
       <v-divider class="mx-4"></v-divider>
       <v-row>
         <v-col>
