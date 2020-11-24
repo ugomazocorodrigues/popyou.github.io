@@ -316,7 +316,7 @@ export default new Vuex.Store({
         nome: "Camiseta Conan Gray Checkmate",
         grupo: "camiseta",
         img: require("@/assets/camisetaConan.png"),
-        preco: 10.0,
+        preco: 40.0,
         vendas: 5,
         propriedades: {
           seuNome: false,
@@ -335,7 +335,7 @@ export default new Vuex.Store({
         nome: "Camiseta Julie and The Phantoms",
         grupo: "camiseta",
         img: require("@/assets/camisetaPhamtons.png"),
-        preco: 10.0,
+        preco: 40.0,
         vendas: 5,
         propriedades: {
           seuNome: false,
