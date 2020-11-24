@@ -42,7 +42,6 @@ export default new Vuex.Store({
           cor: true
         },
         caracteristicas: [
-          "Camiseta Ghostbusters",
           "100% algodão",
           "Fabricação 100% brasileira",
           "Manga curta"
@@ -62,7 +61,6 @@ export default new Vuex.Store({
           cor: false
         },
         caracteristicas: [
-          "Caderno de Star Wars",
           "Capa dura",
           "Com espiral",
           "96 folhas sem pauta",
@@ -104,11 +102,9 @@ export default new Vuex.Store({
           cor: false
         },
         caracteristicas: [
-          "Pode ser levado ao microondas",
-          "Cerâmica",
-          "Impressão em alta definição",
-          "Não sai ao lavar",
-          "Capacidade: 325 ml"
+          "100% algodão",
+          "Fabricação 100% brasileira",
+          "Manga curta"
         ]
       },
       {
@@ -125,11 +121,10 @@ export default new Vuex.Store({
           cor: false
         },
         caracteristicas: [
-          "Pode ser levado ao microondas",
-          "Cerâmica",
-          "Impressão em alta definição",
-          "Não sai ao lavar",
-          "Capacidade: 325 ml"
+          "Capa dura",
+          "Com espiral",
+          "96 folhas sem pauta",
+          "Formato A5 (148mm x 210mm)"
         ]
       },
       {
@@ -146,11 +141,10 @@ export default new Vuex.Store({
           cor: false
         },
         caracteristicas: [
-          "Pode ser levado ao microondas",
-          "Cerâmica",
-          "Impressão em alta definição",
-          "Não sai ao lavar",
-          "Capacidade: 325 ml"
+          "Capa dura",
+          "Com espiral",
+          "96 folhas sem pauta",
+          "Formato A5 (148mm x 210mm)"
         ]
       },
       {
@@ -209,11 +203,10 @@ export default new Vuex.Store({
           cor: false
         },
         caracteristicas: [
-          "Pode ser levado ao microondas",
-          "Cerâmica",
-          "Impressão em alta definição",
-          "Não sai ao lavar",
-          "Capacidade: 325 ml"
+          "Capa dura",
+          "Com espiral",
+          "96 folhas sem pauta",
+          "Formato A5 (148mm x 210mm)"
         ]
       },
       {
@@ -230,11 +223,9 @@ export default new Vuex.Store({
           cor: true
         },
         caracteristicas: [
-          "Pode ser levado ao microondas",
-          "Cerâmica",
-          "Impressão em alta definição",
-          "Não sai ao lavar",
-          "Capacidade: 325 ml"
+          "100% algodão",
+          "Fabricação 100% brasileira",
+          "Manga curta"
         ]
       },
       {
@@ -251,11 +242,10 @@ export default new Vuex.Store({
           cor: false
         },
         caracteristicas: [
-          "Pode ser levado ao microondas",
-          "Cerâmica",
-          "Impressão em alta definição",
-          "Não sai ao lavar",
-          "Capacidade: 325 ml"
+          "Capa dura",
+          "Com espiral",
+          "96 folhas sem pauta",
+          "Formato A5 (148mm x 210mm)"
         ]
       },
       {
@@ -335,11 +325,9 @@ export default new Vuex.Store({
           cor: true
         },
         caracteristicas: [
-          "Pode ser levado ao microondas",
-          "Cerâmica",
-          "Impressão em alta definição",
-          "Não sai ao lavar",
-          "Capacidade: 325 ml"
+          "100% algodão",
+          "Fabricação 100% brasileira",
+          "Manga curta"
         ]
       },
       {
@@ -356,11 +344,9 @@ export default new Vuex.Store({
           cor: false
         },
         caracteristicas: [
-          "Pode ser levado ao microondas",
-          "Cerâmica",
-          "Impressão em alta definição",
-          "Não sai ao lavar",
-          "Capacidade: 325 ml"
+          "100% algodão",
+          "Fabricação 100% brasileira",
+          "Manga curta"
         ]
       },
     ],

@@ -103,7 +103,7 @@
             </v-row>
           </v-col>
           <v-col cols="6" class="pl-12">
-            <v-row class="mt-8">
+            <v-row justify="end" class="mt-8">
               <span class="text-h4 white--text">INSTITUCIONAL</span>
             </v-row>
             <v-row justify="end">

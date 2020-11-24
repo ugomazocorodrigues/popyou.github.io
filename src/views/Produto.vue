@@ -15,7 +15,7 @@
     <v-row>
       <v-col class="ml-12">
         <v-row>
-          <img :src="produto.img" alt="" height="293" />
+          <img :src="produto.img" alt="" height="586" />
         </v-row>
         <v-row class="my-6">
           <ul>
@@ -190,10 +190,10 @@
         </v-row>
       </v-col>
     </v-row>
-    <v-row justify="center" align="center">
+    <v-row justify="center" align="center" class="mb-12">
       <span class="text-h3">VEJA TAMBÉM</span>
     </v-row>
-    <v-row>
+    <v-row justify="center" align="center">
       <v-sheet class="white" height="100%" rounded="lg">
         <v-row justify="center" align="center" no-gutters>
           <v-card
