@@ -50,7 +50,7 @@
         overlap
         bottom
       >
-        <v-btn icon @click="$router.push('/carrinho')" class="ml-4">
+        <v-btn icon @click="mostrarCarrinho = !mostrarCarrinho" class="ml-4">
           <v-icon class="black--text" large>mdi-cart-outline</v-icon>
         </v-btn>
       </v-badge>
@@ -59,6 +59,9 @@
         <v-icon class="black--text" large>mdi-account-outline</v-icon>
       </v-btn>
     </v-app-bar>
+    <v-navigation-drawer v-model="mostrarCarrinho" app width="500" right>
+      <Carrinho />
+    </v-navigation-drawer>
 
     <v-main>
       <router-view></router-view>
@@ -160,11 +163,14 @@
 </template>
 
 <script>
+import Carrinho from "@/components/Carrinho.vue";
 export default {
   name: "App",
+  components: { Carrinho },
 
   data() {
     return {
+      mostrarCarrinho: false,
       redesSociais: [
         {
           img: require("@/assets/facebook.png"),

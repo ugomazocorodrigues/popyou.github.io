@@ -6,7 +6,6 @@ import SobreNos from '@/views/SobreNos.vue'
 import Produto from '@/views/Produto.vue'
 import Contato from '@/views/Contato.vue'
 import Perfil from '@/views/Perfil.vue'
-import Carrinho from '@/views/Carrinho.vue'
 
 Vue.use(VueRouter)
 
@@ -40,11 +39,6 @@ const routes = [
     path: '/perfil',
     name: 'Perfil',
     component: Perfil
-  },
-  {
-    path: '/carrinho',
-    name: 'Carrinho',
-    component: Carrinho
   },
 ]
 
