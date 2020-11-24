@@ -59,7 +59,7 @@
         <v-icon class="black--text" large>mdi-account-outline</v-icon>
       </v-btn>
     </v-app-bar>
-    <v-navigation-drawer v-model="mostrarCarrinho" app width="500" right>
+    <v-navigation-drawer v-model="mostrarCarrinho" app width="400" right>
       <Carrinho v-model="mostrarCarrinho" />
     </v-navigation-drawer>
 
@@ -73,7 +73,7 @@
         <v-row>
           <v-col cols="6">
             <v-row justify="space-around" class="mt-8">
-              <v-img src="@/assets/logo2.png" width="20%"></v-img>
+              <v-img src="@/assets/logo2.png" width="30px"></v-img>
             </v-row>
             <v-row align="center" class="mt-8 mb-8">
               <v-col cols="6">

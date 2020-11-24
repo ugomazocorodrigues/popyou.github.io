@@ -25,7 +25,8 @@
           </ul>
         </v-row>
       </v-col>
-      <v-col>
+
+      <v-col class="ml-8">
         <v-row>
           <span class="text-h4">{{ produto.nome }}</span>
         </v-row>
@@ -203,7 +204,12 @@
           >
             <v-img :src="produto.img" height="293"></v-img>
             <v-row class="ma-2" justify="center">
-              <v-card-title>{{ produto.nome }}</v-card-title>
+              <v-card-title
+                align="center"
+                justify="center"
+                class="text-h6 black--text"
+                >{{ produto.nome }}</v-card-title
+              >
             </v-row>
             <v-row justify="center">
               <v-card-title class="">

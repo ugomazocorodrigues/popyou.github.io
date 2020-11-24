@@ -68,8 +68,13 @@
               @click="clickProduto(produto.id)"
             >
               <v-img :src="produto.img" height="293"></v-img>
-              <v-row class="ma-2" justify="center">
-                <v-card-title>{{ produto.nome }}</v-card-title>
+              <v-row class="ma-2" align="center" justify="center">
+                <v-card-text
+                  align="center"
+                  justify="center"
+                  class="text-h6 black--text"
+                  >{{ produto.nome }}</v-card-text
+                >
               </v-row>
               <v-row justify="center">
                 <v-card-title class="">

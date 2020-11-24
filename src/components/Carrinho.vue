@@ -23,31 +23,31 @@
 
       <v-divider class="mx-4"></v-divider>
       <v-row no-gutters>
-        <v-col cols="8">
+        <v-col cols="7">
           <v-card-title>PRODUTO</v-card-title>
         </v-col>
-        <v-col cols="4">
+        <v-col cols="5">
           <v-card-title>SUBTOTAL</v-card-title>
         </v-col>
       </v-row>
       <v-divider class="mx-4"></v-divider>
       <div v-for="(item, i) in itens" :key="i" no- class="mt-2 ml-4">
         <v-row>
-          <v-col cols="2">
-            <v-img :src="item.img" max-height="100" max-width="100"></v-img>
+          <v-col cols="3">
+            <v-img :src="item.img" max-height="200" max-width="200"></v-img>
           </v-col>
-          <v-col cols="6">
+          <v-col cols="5">
             <span>#{{ item.id }} {{ item.nome }} </span>
           </v-col>
           <v-col cols="3" align="end">
             <span>
-              {{ formataValor(item.preco * item.quantidade) }}
+              {{ formataValor(item.preco) }}
             </span>
           </v-col>
         </v-row>
         <v-row>
-          <v-col cols="2" align="center">
-            {{ formataValor(item.preco) }}
+          <v-col cols="3" align="center">
+            {{ formataValor(item.preco * item.quantidade) }}
           </v-col>
           <v-col cols="6">
             <v-btn
@@ -67,17 +67,15 @@
             </v-btn>
           </v-col>
           <v-col cols="3">
-            <v-btn icon @click="clickDeletarItem(i)">
+            <v-btn icon @click="clickDeletarItem(i)" justify="end">
               <v-icon class="red--text">mdi-delete-outline</v-icon>
             </v-btn>
           </v-col>
         </v-row>
-        <v-divider class="mr-12"></v-divider>
+        <v-divider class="mr-6"></v-divider>
       </div>
-
-      <!-- <v-card-title class="text-h6">SUBTOTAL (sem frete):</v-card-title> -->
       <v-row>
-        <v-col cols="8" class="ml-3">
+        <v-col cols="7" class="ml-4">
           <span>SUBTOTAL (sem frete):</span>
         </v-col>
         <v-col cols="3" align="end">
@@ -86,15 +84,20 @@
       </v-row>
       <v-divider class="mx-4"></v-divider>
       <v-row class="ml-2">
-        <v-col cols="6">
-          <v-text-field label="Seu CEP" outlined dense></v-text-field>
+        <v-col cols="5">
+          <v-text-field
+            label="Seu CEP"
+            maxlength="9"
+            outlined
+            dense
+          ></v-text-field>
         </v-col>
 
         <v-col>
           <v-btn
             elevation="none"
             text
-            class="ml-0 amarelo"
+            class="ml-2 amarelo"
             @click="clickCalcularFrete()"
             >calcular frete</v-btn
           >
@@ -117,21 +120,18 @@
           <span>{{ formataValor(carrinhoTotal) }}</span>
         </v-col>
       </v-row>
-      <v-row class="ml-4">
-        <v-col cols="6" />
-        <v-col cols="3">
-          <v-btn
-            elevation="none"
-            class="amarelo"
-            @click="clickFinalizarCompra()"
-            >finalizar compra</v-btn
-          >
-        </v-col>
+      <v-row class="ml-4 mt-4">
+        <v-btn
+          elevation="none"
+          class="amarelo"
+          block
+          @click="clickFinalizarCompra()"
+          >finalizar compra</v-btn
+        >
       </v-row>
 
       <v-card-actions> </v-card-actions>
     </v-card>
-    <!-- /////////////////// -->
   </div>
 </template>
   
