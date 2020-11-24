@@ -73,7 +73,7 @@
         <v-row>
           <v-col cols="6">
             <v-row justify="space-around" class="mt-8">
-              <v-img src="@/assets/logo2.png" width="30%"></v-img>
+              <v-img src="@/assets/logo2.png" width="20%"></v-img>
             </v-row>
             <v-row align="center" class="mt-8 mb-8">
               <v-col cols="6">
@@ -103,7 +103,7 @@
             </v-row>
           </v-col>
           <v-col cols="6" class="pl-12">
-            <v-row justify="end" class="mt-8">
+            <v-row justify="start" class="mt-8">
               <span class="text-h4 white--text">INSTITUCIONAL</span>
             </v-row>
             <v-row justify="end">
