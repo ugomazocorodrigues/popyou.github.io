@@ -31,7 +31,7 @@
         <p>
           Além da nossa visão para o usuário, contribuímos para o mundo. Todas
           as nossas embalagens são biodegradáveis e não utilizamos nada que
-          prejudique o ecossistema.
+          prejudique o ecossistema.lalala
         </p>
       </v-col>
     </v-row>
