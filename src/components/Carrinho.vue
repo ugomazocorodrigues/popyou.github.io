@@ -72,9 +72,9 @@
             </v-btn>
           </v-col>
         </v-row>
-        <v-divider class="mr-6"></v-divider>
+        <v-divider class="mr-5"></v-divider>
       </div>
-      <v-row>
+      <v-row class="mt-1">
         <v-col cols="7" class="ml-4">
           <span>SUBTOTAL (sem frete):</span>
         </v-col>
@@ -83,7 +83,7 @@
         </v-col>
       </v-row>
       <v-divider class="mx-4"></v-divider>
-      <v-row class="ml-2">
+      <v-row class="ml-2 mt-2">
         <v-col cols="5">
           <v-text-field
             label="Seu CEP"
