@@ -72,8 +72,8 @@
       <v-container class="pl-0">
         <v-row>
           <v-col cols="6">
-            <v-row justify="space-around" class="mt-8">
-              <v-img src="@/assets/logo2.png" width="30px"></v-img>
+            <v-row class="mt-8">
+              <img src="@/assets/logo2.png" width="90%" />
             </v-row>
             <v-row align="center" class="mt-8 mb-8">
               <v-col cols="6">
@@ -104,18 +104,18 @@
           </v-col>
           <v-col cols="6" class="pl-12">
             <v-row justify="start" class="mt-8">
-              <span class="text-h4 white--text">INSTITUCIONAL</span>
+              <span class="text-h4 white--text ml-12">INSTITUCIONAL</span>
             </v-row>
             <v-row justify="end">
               <v-col>
-                <v-btn text class="ml-8 white--text" @click="$router.push('/')"
+                <v-btn text class="ml-6 white--text" @click="$router.push('/')"
                   >home</v-btn
                 >
               </v-col>
               <v-col>
                 <v-btn
                   text
-                  class="ml-8 white--text"
+                  class="ml-6 white--text"
                   @click="$router.push('/Sobrenos')"
                   >sobre nós</v-btn
                 >
@@ -125,32 +125,32 @@
               <v-col>
                 <v-btn
                   text
-                  class="ml-8 white--text"
+                  class="ml-6 white--text"
                   @click="$router.push('/Contato')"
                   >contato</v-btn
                 >
               </v-col>
               <v-col>
-                <v-btn text class="ml-8 white--text" @click="$router.push('/')"
+                <v-btn text class="ml-6 white--text" @click="$router.push('/')"
                   >dúvidas frequentes</v-btn
                 >
               </v-col>
             </v-row>
             <v-row justify="space-around">
               <v-col>
-                <v-btn text class="ml-8 white--text" @click="$router.push('/')"
+                <v-btn text class="ml-6 white--text" @click="$router.push('/')"
                   >trocas e devoluções</v-btn
                 >
               </v-col>
               <v-col>
-                <v-btn text class="ml-8 white--text" @click="$router.push('/')"
+                <v-btn text class="ml-6 white--text" @click="$router.push('/')"
                   >privacidade</v-btn
                 >
               </v-col>
             </v-row>
             <v-row justify="space-around">
               <v-col>
-                <v-btn text class="ml-8 white--text" @click="$router.push('/')"
+                <v-btn text class="ml-6 white--text" @click="$router.push('/')"
                   >segurança</v-btn
                 >
               </v-col>

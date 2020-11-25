@@ -74,7 +74,7 @@
         </v-row>
         <v-divider class="mr-5"></v-divider>
       </div>
-      <v-row class="mt-1">
+      <v-row class="my-1">
         <v-col cols="7" class="ml-4">
           <span>SUBTOTAL (sem frete):</span>
         </v-col>

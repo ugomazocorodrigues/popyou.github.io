@@ -27,7 +27,7 @@
       </v-col>
 
       <v-col class="ml-8">
-        <v-row>
+        <v-row class="pr-6">
           <span class="text-h4">{{ produto.nome }}</span>
         </v-row>
         <v-row>
@@ -174,7 +174,7 @@
         </v-row>
 
         <v-row>
-          <v-col fab cols="5"></v-col>
+          <v-col fab cols="8"></v-col>
           <v-col>
             <v-btn
               elevation="none"
@@ -204,11 +204,11 @@
           >
             <v-img :src="produto.img" height="293"></v-img>
             <v-row class="ma-2" justify="center">
-              <v-card-title
+              <v-card-text
                 align="center"
                 justify="center"
                 class="text-h6 black--text"
-                >{{ produto.nome }}</v-card-title
+                >{{ produto.nome }}</v-card-text
               >
             </v-row>
             <v-row justify="center">
@@ -244,17 +244,17 @@ export default {
         {
           text: "HOME",
           disabled: false,
-          href: "/",
+          to: "/",
         },
         {
           text: "BUSCA",
           disabled: false,
-          href: "/busca",
+          to: "/busca",
         },
         {
           text: "PRODUTO",
           disabled: true,
-          href: "/produto",
+          to: "/produto",
         },
       ],
       snackbar: {

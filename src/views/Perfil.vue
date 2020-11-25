@@ -26,7 +26,7 @@
         </v-row>
       </v-col>
       <v-col cols="7">
-        <v-row class="my-2">
+        <v-row class="my-2 mb-4">
           <span class="text-h5">MEUS PEDIDOS</span>
         </v-row>
         <v-row v-for="(pedido, i) in pedidos" :key="i" class="my-2" no-gutters>
