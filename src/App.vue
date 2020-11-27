@@ -73,7 +73,11 @@
         <v-row>
           <v-col cols="6">
             <v-row class="mt-8">
-              <img src="@/assets/logo2.png" width="90%" />
+              <img
+                src="@/assets/logo2.png"
+                alt="Pop You Store Logo"
+                width="90%"
+              />
             </v-row>
             <v-row align="center" class="mt-8 mb-8">
               <v-col cols="6">

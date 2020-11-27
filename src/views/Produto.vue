@@ -15,7 +15,7 @@
     <v-row>
       <v-col class="ml-12">
         <v-row>
-          <img :src="produto.img" alt="" height="586" />
+          <img :src="produto.img" :alt="produto.img.alt" height="586" />
         </v-row>
         <v-row class="my-6">
           <ul>
@@ -115,9 +115,7 @@
             </v-row>
           </v-col>
         </v-row>
-        <v-row>
-          <!-- quantidade -->
-        </v-row>
+
         <v-row v-show="produto.propriedades.cor">
           <v-col>
             <v-row>
@@ -172,6 +170,9 @@
         <v-row v-show="produto.propriedades.carregarImagem" class="my-6">
           <v-btn rounded outlined>CARREGAR IMAGEM</v-btn>
         </v-row>
+        <v-row>
+          <!-- quantidade -->
+        </v-row>
 
         <v-row>
           <v-col fab cols="8"></v-col>
@@ -202,7 +203,11 @@
             class="ma-5"
             @click="clickProduto(produto.id)"
           >
-            <v-img :src="produto.img" height="293"></v-img>
+            <v-img
+              :src="produto.img"
+              :alt="produto.img.alt"
+              height="293"
+            ></v-img>
             <v-row class="ma-2" justify="center">
               <v-card-text
                 align="center"

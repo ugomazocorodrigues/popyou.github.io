@@ -11,7 +11,10 @@ export default new Vuex.Store({
         id: 1,
         nome: "Caneca Chilling Sabrina",
         grupo: "caneca",
-        img: require("@/assets/mugSabrina.png"),
+        img: {
+          src: require("@/assets/mugSabrina.png"),
+          alt: "",
+        },
         preco: 15.0,
         vendas: 1,
         propriedades: {
@@ -32,7 +35,10 @@ export default new Vuex.Store({
         id: 2,
         nome: "Camiseta Ghostbusters",
         grupo: "camiseta",
-        img: require("@/assets/ghostbustersCamiseta.png"),
+        img: {
+          src: require("@/assets/ghostbustersCamiseta.png"),
+          alt: "",
+        },
         preco: 40.0,
         vendas: 2,
         propriedades: {
@@ -51,7 +57,10 @@ export default new Vuex.Store({
         id: 3,
         nome: "Caderno The Good Place",
         grupo: "caderno",
-        img: require("@/assets/notebookTheGoodPlace.png"),
+        img: {
+          src: require("@/assets/notebookTheGoodPlace.png"),
+          alt: "",
+        },
         preco: 15.0,
         vendas: 2,
         propriedades: {
@@ -71,7 +80,10 @@ export default new Vuex.Store({
         id: 4,
         nome: "Caneca Ghostbusters",
         grupo: "caneca",
-        img: require("@/assets/mugGhostbusters.png"),
+        img: {
+          src: require("@/assets/mugGhostbusters.png"),
+          alt: "",
+        },
         preco: 10.0,
         vendas: 4,
         propriedades: {
@@ -92,7 +104,10 @@ export default new Vuex.Store({
         id: 5,
         nome: "Camiseta Scooby-Doo",
         grupo: "camiseta",
-        img: require("@/assets/camisetaScooby.png"),
+        img: {
+          src: require("@/assets/camisetaScooby.png"),
+          alt: "",
+        },
         preco: 40.0,
         vendas: 4,
         propriedades: {
@@ -111,7 +126,10 @@ export default new Vuex.Store({
         id: 6,
         nome: "Caderno The Nightmare Before Christmas",
         grupo: "caderno",
-        img: require("@/assets/cadernoChristmas.png"),
+        img: {
+          src: require("@/assets/cadernoChristmas.png"),
+          alt: "",
+        },
         preco: 20.0,
         vendas: 4,
         propriedades: {
@@ -131,7 +149,10 @@ export default new Vuex.Store({
         id: 7,
         nome: "Caderno Star Wars Customizável",
         grupo: "caderno",
-        img: require("@/assets/cadernoStarWars.png"),
+        img: {
+          src: require("@/assets/cadernoStarWars.png"),
+          alt: "",
+        },
         preco: 25.0,
         vendas: 5,
         propriedades: {
@@ -151,7 +172,10 @@ export default new Vuex.Store({
         id: 8,
         nome: "Capinha de iPhone 6 Customizável",
         grupo: "capinha",
-        img: require("@/assets/caseCustomizavel.png"),
+        img: {
+          src: require("@/assets/caseCustomizavel.png"),
+          alt: "",
+        },
         preco: 30.0,
         vendas: 1,
         propriedades: {
@@ -172,7 +196,10 @@ export default new Vuex.Store({
         id: 9,
         nome: "Caneca Customizável",
         grupo: "caneca",
-        img: require("@/assets/mugCustomizável.png"),
+        img: {
+          src: require("@/assets/mugCustomizável.png"),
+          alt: "",
+        },
         preco: 10.0,
         vendas: 1,
         propriedades: {
@@ -193,7 +220,10 @@ export default new Vuex.Store({
         id: 10,
         nome: "Caderno Steven Universe Customizável",
         grupo: "caderno",
-        img: require("@/assets/notebookStevenUniverseCustomizavel.png"),
+        img: {
+          src: require("@/assets/notebookStevenUniverseCustomizavel.png"),
+          alt: "",
+        },
         preco: 25.0,
         vendas: 3,
         propriedades: {
@@ -213,7 +243,10 @@ export default new Vuex.Store({
         id: 11,
         nome: "Camiseta Customizável",
         grupo: "camiseta",
-        img: require("@/assets/camisetaCustomizavel.png"),
+        img: {
+          src: require("@/assets/camisetaCustomizavel.png"),
+          alt: "",
+        },
         preco: 40.0,
         vendas: 1,
         propriedades: {
@@ -232,7 +265,10 @@ export default new Vuex.Store({
         id: 12,
         nome: "Caderno Malevola",
         grupo: "caderno",
-        img: require("@/assets/cadernoMalevola.png"),
+        img: {
+          src: require("@/assets/cadernoMalevola.png"),
+          alt: "",
+        },
         preco: 20.0,
         vendas: 1,
         propriedades: {
@@ -252,7 +288,10 @@ export default new Vuex.Store({
         id: 13,
         nome: "Caneca Julie and The Phantoms",
         grupo: "caneca",
-        img: require("@/assets/mugJulie.png"),
+        img: {
+          src: require("@/assets/mugJulie.png"),
+          alt: "",
+        },
         preco: 10.0,
         vendas: 3,
         propriedades: {
@@ -273,7 +312,10 @@ export default new Vuex.Store({
         id: 14,
         nome: "Caneca The Nightmare Before Christmas Customizável",
         grupo: "caneca",
-        img: require("@/assets/mugChristmasCustomizavel.png"),
+        img: {
+          src: require("@/assets/mugChristmasCustomizavel.png"),
+          alt: "",
+        },
         preco: 15.0,
         vendas: 2,
         propriedades: {
@@ -294,7 +336,10 @@ export default new Vuex.Store({
         id: 15,
         nome: "Caneca Sunset Curve",
         grupo: "caneca",
-        img: require("@/assets/mugSunsetCurve.png"),
+        img: {
+          src: require("@/assets/mugSunsetCurve.png"),
+          alt: "",
+        },
         preco: 10.0,
         vendas: 3,
         propriedades: {
@@ -315,7 +360,10 @@ export default new Vuex.Store({
         id: 16,
         nome: "Camiseta Conan Gray Checkmate",
         grupo: "camiseta",
-        img: require("@/assets/camisetaConan.png"),
+        img: {
+          src: require("@/assets/camisetaConan.png"),
+          alt: "",
+        },
         preco: 40.0,
         vendas: 5,
         propriedades: {
@@ -334,7 +382,10 @@ export default new Vuex.Store({
         id: 17,
         nome: "Camiseta Julie and The Phantoms",
         grupo: "camiseta",
-        img: require("@/assets/camisetaPhamtons.png"),
+        img: {
+          src: require("@/assets/camisetaPhamtons.png"),
+          alt: "",
+        },
         preco: 40.0,
         vendas: 5,
         propriedades: {

@@ -67,7 +67,11 @@
               class="ma-5"
               @click="clickProduto(produto.id)"
             >
-              <v-img :src="produto.img" height="293"></v-img>
+              <v-img
+                :src="produto.img.src"
+                :alt="produto.img.alt"
+                height="293"
+              ></v-img>
               <v-row class="ma-2" align="center" justify="center">
                 <v-card-text
                   align="center"

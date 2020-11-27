@@ -36,7 +36,11 @@
         <div v-for="(item, i) in itens" :key="i" class="mt-2">
           <v-row>
             <v-col cols="2">
-              <v-img :src="item.img" max-height="100" max-width="100"></v-img>
+              <v-img
+                :src="item.img.src"
+                max-height="100"
+                max-width="100"
+              ></v-img>
             </v-col>
             <v-col cols="6">
               <span>#{{ item.id }} {{ item.nome }} </span>
@@ -171,7 +175,7 @@ export default {
           id: item.id,
           quantidade: item.quantidade,
           nome: produto.nome,
-          img: produto.img,
+          img: produto.img.src,
           preco: produto.preco,
         };
 
