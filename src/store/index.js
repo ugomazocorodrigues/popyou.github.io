@@ -13,7 +13,7 @@ export default new Vuex.Store({
         grupo: "caneca",
         img: {
           src: require("@/assets/mugSabrina.png"),
-          alt: "",
+          alt: "Caneca Chilling Sabrina",
         },
         preco: 15.0,
         vendas: 1,
@@ -37,7 +37,7 @@ export default new Vuex.Store({
         grupo: "camiseta",
         img: {
           src: require("@/assets/ghostbustersCamiseta.png"),
-          alt: "",
+          alt: "Camiseta Ghostbusters",
         },
         preco: 40.0,
         vendas: 2,
@@ -59,7 +59,7 @@ export default new Vuex.Store({
         grupo: "caderno",
         img: {
           src: require("@/assets/notebookTheGoodPlace.png"),
-          alt: "",
+          alt: "Caderno The Good Place",
         },
         preco: 15.0,
         vendas: 2,
@@ -82,7 +82,7 @@ export default new Vuex.Store({
         grupo: "caneca",
         img: {
           src: require("@/assets/mugGhostbusters.png"),
-          alt: "",
+          alt: "Caneca Ghostbusters",
         },
         preco: 10.0,
         vendas: 4,
@@ -106,7 +106,7 @@ export default new Vuex.Store({
         grupo: "camiseta",
         img: {
           src: require("@/assets/camisetaScooby.png"),
-          alt: "",
+          alt: "Camiseta Scooby-Doo",
         },
         preco: 40.0,
         vendas: 4,

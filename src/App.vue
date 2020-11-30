@@ -136,26 +136,7 @@
               </v-col>
               <v-col>
                 <v-btn text class="ml-6 white--text" @click="$router.push('/')"
-                  >dúvidas frequentes</v-btn
-                >
-              </v-col>
-            </v-row>
-            <v-row justify="space-around">
-              <v-col>
-                <v-btn text class="ml-6 white--text" @click="$router.push('/')"
-                  >trocas e devoluções</v-btn
-                >
-              </v-col>
-              <v-col>
-                <v-btn text class="ml-6 white--text" @click="$router.push('/')"
                   >privacidade</v-btn
-                >
-              </v-col>
-            </v-row>
-            <v-row justify="space-around">
-              <v-col>
-                <v-btn text class="ml-6 white--text" @click="$router.push('/')"
-                  >segurança</v-btn
                 >
               </v-col>
             </v-row>
