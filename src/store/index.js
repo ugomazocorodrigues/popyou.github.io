@@ -128,7 +128,7 @@ export default new Vuex.Store({
         grupo: "caderno",
         img: {
           src: require("@/assets/cadernoChristmas.png"),
-          alt: "",
+          alt: "Caderno The Nightmare Before Christmas",
         },
         preco: 20.0,
         vendas: 4,
@@ -151,7 +151,7 @@ export default new Vuex.Store({
         grupo: "caderno",
         img: {
           src: require("@/assets/cadernoStarWars.png"),
-          alt: "",
+          alt: "Caderno Star Wars Customizável",
         },
         preco: 25.0,
         vendas: 5,
@@ -174,7 +174,7 @@ export default new Vuex.Store({
         grupo: "capinha",
         img: {
           src: require("@/assets/caseCustomizavel.png"),
-          alt: "",
+          alt: "Capinha de iPhone 6 Customizável",
         },
         preco: 30.0,
         vendas: 1,
@@ -198,7 +198,7 @@ export default new Vuex.Store({
         grupo: "caneca",
         img: {
           src: require("@/assets/mugCustomizável.png"),
-          alt: "",
+          alt: "Caneca Customizável",
         },
         preco: 10.0,
         vendas: 1,
@@ -222,7 +222,7 @@ export default new Vuex.Store({
         grupo: "caderno",
         img: {
           src: require("@/assets/notebookStevenUniverseCustomizavel.png"),
-          alt: "",
+          alt: "Caderno Steven Universe Customizável",
         },
         preco: 25.0,
         vendas: 3,
@@ -245,7 +245,7 @@ export default new Vuex.Store({
         grupo: "camiseta",
         img: {
           src: require("@/assets/camisetaCustomizavel.png"),
-          alt: "",
+          alt: "Camiseta Customizável",
         },
         preco: 40.0,
         vendas: 1,
@@ -267,7 +267,7 @@ export default new Vuex.Store({
         grupo: "caderno",
         img: {
           src: require("@/assets/cadernoMalevola.png"),
-          alt: "",
+          alt: "Caderno Malevola",
         },
         preco: 20.0,
         vendas: 1,
@@ -290,7 +290,7 @@ export default new Vuex.Store({
         grupo: "caneca",
         img: {
           src: require("@/assets/mugJulie.png"),
-          alt: "",
+          alt: "Caneca Julie and The Phantoms",
         },
         preco: 10.0,
         vendas: 3,
@@ -314,7 +314,7 @@ export default new Vuex.Store({
         grupo: "caneca",
         img: {
           src: require("@/assets/mugChristmasCustomizavel.png"),
-          alt: "",
+          alt: "Caneca The Nightmare Before Christmas Customizável",
         },
         preco: 15.0,
         vendas: 2,
@@ -338,7 +338,7 @@ export default new Vuex.Store({
         grupo: "caneca",
         img: {
           src: require("@/assets/mugSunsetCurve.png"),
-          alt: "",
+          alt: "Caneca Sunset Curve",
         },
         preco: 10.0,
         vendas: 3,
@@ -362,7 +362,7 @@ export default new Vuex.Store({
         grupo: "camiseta",
         img: {
           src: require("@/assets/camisetaConan.png"),
-          alt: "",
+          alt: "Camiseta Conan Gray Checkmate",
         },
         preco: 40.0,
         vendas: 5,
@@ -384,7 +384,7 @@ export default new Vuex.Store({
         grupo: "camiseta",
         img: {
           src: require("@/assets/camisetaPhamtons.png"),
-          alt: "",
+          alt: "Camiseta Julie and The Phantoms",
         },
         preco: 40.0,
         vendas: 5,
