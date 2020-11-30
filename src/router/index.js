@@ -6,6 +6,7 @@ import SobreNos from '@/views/SobreNos.vue'
 import Produto from '@/views/Produto.vue'
 import Contato from '@/views/Contato.vue'
 import Perfil from '@/views/Perfil.vue'
+import Privacidade from '@/views/Privacidade.vue'
 
 Vue.use(VueRouter)
 
@@ -39,6 +40,11 @@ const routes = [
     path: '/perfil',
     name: 'Perfil',
     component: Perfil
+  },
+  {
+    path: '/privacidade',
+    name: 'Privacidade',
+    component: Privacidade
   },
 ]
 

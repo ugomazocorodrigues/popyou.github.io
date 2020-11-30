@@ -135,7 +135,10 @@
                 >
               </v-col>
               <v-col>
-                <v-btn text class="ml-6 white--text" @click="$router.push('/')"
+                <v-btn
+                  text
+                  class="ml-6 white--text"
+                  @click="$router.push('/Privacidade')"
                   >privacidade</v-btn
                 >
               </v-col>
