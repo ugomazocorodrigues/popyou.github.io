@@ -2,7 +2,7 @@
   <div>
     <v-breadcrumbs :items="breadcrumbs" divider=">" large />
     <v-row class="ml-8">
-      <span class="text-h4 verde--text">PRIVACIDADEa</span>
+      <span class="text-h4 verde--text">PRIVACIDADE</span>
     </v-row>
     <v-row justify="center">
       <v-col cols="10">
