@@ -15,7 +15,7 @@
     <v-row>
       <v-col class="ml-12">
         <v-row>
-          <img :src="produto.img" :alt="produto.img.alt" height="586" />
+          <img :src="produto.img.src" :alt="produto.img.alt" height="586" />
         </v-row>
         <v-row class="my-6">
           <ul>
@@ -204,7 +204,7 @@
             @click="clickProduto(produto.id)"
           >
             <v-img
-              :src="produto.img"
+              :src="produto.img.src"
               :alt="produto.img.alt"
               height="293"
             ></v-img>
