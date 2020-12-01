@@ -19,8 +19,6 @@
         <p>
           Nós pensamos em tudo para que fosse o mais divertido, colorido e
           prático para pessoas de todas as idades mergulharem em suas melhores
-          ideias. Nós pensamos em tudo para que fosse o mais divertido, colorido
-          e prático para pessoas de todas as idades mergulharem em suas melhores
           ideias.
         </p>
       </v-col>
